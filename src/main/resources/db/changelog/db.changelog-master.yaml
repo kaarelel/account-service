@@ -1,0 +1,56 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: kaarelel
+      changes:
+        - createTable:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: username
+                  type: VARCHAR (50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone
+                  type: VARCHAR (25)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 2
+      author: kaarelel
+      changes:
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: 8f1b7b12-1d2a-4a6f-9b6e-f7f3f4a5b6c7
+              - column:
+                  name: username
+                  value: Mari Maasikas
+              - column:
+                  name: phone
+                  value: +37253014344
+              - column:
+                  name: created_at
+                  valueDate: NOW()
+              - column:
+                  name: updated_at
+                  valueDate: NOW()
