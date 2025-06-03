@@ -1,14 +1,14 @@
 A Spring Boot RESTful application for managing accounts using CRUD operations. Built with Java LTS, Gradle, Liquibase, and H2 database.
 
-**Run the App**
+**Run the App**:
 bash ./gradlew bootRun
 
-**Swagger UI** 
+**Swagger UI**: 
 POST(CreateAccount), GET(AccountInfoViaId), PUT(UpdateAccount), DELETE(DeleteAccount)
 
 http://localhost:8080/swagger-ui/index.html
 
-**H2 Console**
+**H2 Console**: 
 
 http://localhost:8080/h2-console
 
@@ -18,7 +18,7 @@ Password: (leave empty)
 
 SELECT * FROM ACCOUNT;
 
-**Technologies**
+**Technologies**:
 
 Java 17 (LTS)
 Spring Boot 3
