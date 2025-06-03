@@ -12,9 +12,9 @@ http://localhost:8080/swagger-ui/index.html
 
 http://localhost:8080/h2-console
 
-JDBC URL: jdbc:h2:mem:testdb
-Username: sa
-Password: (leave empty)
+JDBC URL: jdbc:h2:mem:testdb ; 
+Username: sa ; 
+Password: (leave empty); 
 
 SELECT * FROM ACCOUNT;
 
