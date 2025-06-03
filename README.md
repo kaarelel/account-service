@@ -16,8 +16,6 @@ JDBC URL: jdbc:h2:mem:testdb ;
 Username: sa ; 
 Password: (leave empty); 
 
-SELECT * FROM ACCOUNT;
-
 **Technologies**:
 
 Java 17 (LTS); 
